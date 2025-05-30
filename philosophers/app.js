@@ -26,7 +26,7 @@ class PhilosophyGraphApp {
     }
 
     async loadData() {
-        const response = await fetch('https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/2b729daf07fa2cfd2c8251733bf267e7/98ec60b5-92cf-4372-90cf-3a6db5918791/3ec69f54.json');
+        const response = await fetch('./graph_data.json');
         this.graphData = await response.json();
         
         // Process nodes for vis.js
