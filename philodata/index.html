@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy Network Graph</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Philosophy Network Database</h1>
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" id="search" class="form-control" placeholder="Search philosophers or articles...">
+                </div>
+                <div class="filter-controls">
+                    <select id="type-filter" class="form-control">
+                        <option value="all">All Types</option>
+                        <option value="newsletter">Newsletter</option>
+                        <option value="podcast">Podcast</option>
+                    </select>
+                    <select id="layout-select" class="form-control">
+                        <option value="force">Force Layout</option>
+                        <option value="circular">Circular Layout</option>
+                        <option value="hierarchical">Hierarchical Layout</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Graph container -->
+            <div class="graph-container">
+                <svg id="graph-svg"></svg>
+                <div class="graph-controls">
+                    <button id="reset-zoom" class="btn btn--secondary btn--sm">Reset Zoom</button>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color philosopher"></div>
+                            <span>Philosophers</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color article"></div>
+                            <span>Articles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side panel -->
+            <div class="side-panel" id="side-panel">
+                <div class="side-panel-header">
+                    <h3 id="panel-title">Network Overview</h3>
+                    <button id="close-panel" class="btn btn--secondary btn--sm">×</button>
+                </div>
+                <div class="side-panel-content" id="panel-content">
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Total Philosophers:</span>
+                            <span class="stat-value" id="total-philosophers">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Total Articles:</span>
+                            <span class="stat-value" id="total-articles">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Connections:</span>
+                            <span class="stat-value" id="total-connections">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline controls -->
+        <div class="timeline-container">
+            <div class="timeline-header">
+                <h4>Publication Timeline</h4>
+                <div class="timeline-controls">
+                    <button id="play-btn" class="btn btn--primary btn--sm">▶ Play</button>
+                    <button id="pause-btn" class="btn btn--secondary btn--sm hidden">⏸ Pause</button>
+                    <button id="reset-timeline" class="btn btn--secondary btn--sm">Reset</button>
+                </div>
+            </div>
+            <div class="timeline-slider-container">
+                <div class="timeline-labels">
+                    <span>Sep 2024</span>
+                    <span id="current-date">May 2025</span>
+                    <span>May 2025</span>
+                </div>
+                <input type="range" id="timeline-slider" class="timeline-slider" min="0" max="100" value="100">
+                <div class="timeline-info">
+                    <span id="visible-articles">All articles visible</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div id="tooltip" class="tooltip hidden">
+        <div class="tooltip-content"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
