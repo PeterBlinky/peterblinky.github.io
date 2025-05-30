@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy Graph Database</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>Philosophy Graph Database</h1>
+            <p>Interactive exploration of philosophers and their articles</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Sidebar - Controls -->
+            <aside class="sidebar left-sidebar">
+                <div class="panel">
+                    <h3>Controls</h3>
+                    
+                    <!-- Node Type Filters -->
+                    <div class="form-group">
+                        <label class="form-label">Node Types</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="showPhilosophers" checked>
+                                <span>Philosophers</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="showArticles" checked>
+                                <span>Articles</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="form-group">
+                        <label class="form-label" for="searchInput">Search</label>
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search philosophers or articles...">
+                    </div>
+
+                    <!-- Date Range -->
+                    <div class="form-group">
+                        <label class="form-label" for="dateRange">Date Range</label>
+                        <input type="range" id="dateRange" class="range-input" min="0" max="100" value="100">
+                        <div class="range-labels">
+                            <span id="dateStart">2024-07</span>
+                            <span id="dateEnd">2025-05</span>
+                        </div>
+                    </div>
+
+                    <!-- Layout Options -->
+                    <div class="form-group">
+                        <label class="form-label" for="layoutSelect">Layout</label>
+                        <select id="layoutSelect" class="form-control">
+                            <option value="force">Force-Directed</option>
+                            <option value="hierarchical">Hierarchical</option>
+                            <option value="circular">Circular</option>
+                        </select>
+                    </div>
+
+                    <!-- Physics Toggle -->
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="physicsToggle" checked>
+                            <span>Enable Physics</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Statistics Panel -->
+                <div class="panel">
+                    <h3>Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Philosophers</span>
+                            <span class="stat-value" id="statPhilosophers">-</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Articles</span>
+                            <span class="stat-value" id="statArticles">-</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Connections</span>
+                            <span class="stat-value" id="statConnections">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Philosophers -->
+                <div class="panel">
+                    <h3>Top Philosophers</h3>
+                    <div id="topPhilosophersList" class="top-list">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Center - Network Graph -->
+            <main class="graph-container">
+                <div id="networkGraph" class="network-graph"></div>
+                <div class="graph-legend">
+                    <div class="legend-item">
+                        <div class="legend-node philosopher-node"></div>
+                        <span>Philosophers</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-node article-node"></div>
+                        <span>Articles</span>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Sidebar - Details -->
+            <aside class="sidebar right-sidebar">
+                <!-- Node Details -->
+                <div class="panel" id="nodeDetailsPanel">
+                    <h3>Node Details</h3>
+                    <div id="nodeDetails" class="node-details">
+                        <p class="placeholder-text">Click on a node to see details</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Chart -->
+                <div class="panel">
+                    <h3>Publication Timeline</h3>
+                    <div class="chart-container">
+                        <canvas id="timelineChart" width="300" height="200"></canvas>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

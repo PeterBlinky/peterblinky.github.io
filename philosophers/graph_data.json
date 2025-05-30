@@ -1,0 +1,4491 @@
+{
+  "nodes": [
+    {
+      "id": "phil_0",
+      "label": "Theodor W. Adorno",
+      "type": "philosopher",
+      "size": 25,
+      "connections": 8,
+      "articles": 3
+    },
+    {
+      "id": "phil_1",
+      "label": "Michel de Montaigne",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 3,
+      "articles": 2
+    },
+    {
+      "id": "phil_2",
+      "label": "Samuel Beckett",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_3",
+      "label": "Woodrow Wilson",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_4",
+      "label": "Albert Ellis",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_5",
+      "label": "Voltaire",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_6",
+      "label": "André Malraux",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_7",
+      "label": "Jane Bennett",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_8",
+      "label": "Ruth Chang",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_9",
+      "label": "Jacques Derrida",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_10",
+      "label": "John Locke",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_11",
+      "label": "Pseudo Longinus",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_12",
+      "label": "Frida Kahlo",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 4,
+      "articles": 2
+    },
+    {
+      "id": "phil_13",
+      "label": "Graham Allison",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_14",
+      "label": "Maya Angelou",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_15",
+      "label": "Marcel Duchamp",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_16",
+      "label": "Shoshana Zuboff",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 6,
+      "articles": 1
+    },
+    {
+      "id": "phil_17",
+      "label": "Uwe Poerksen",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_18",
+      "label": "Oscar Wilde",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_19",
+      "label": "Susan Sontag",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_20",
+      "label": "Michelangelo Antonioni",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_21",
+      "label": "Epicurus",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_22",
+      "label": "René Descartes",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_23",
+      "label": "Niccolò Machiavelli",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_24",
+      "label": "Marcus Aurelius",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_25",
+      "label": "Plato",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 8,
+      "articles": 2
+    },
+    {
+      "id": "phil_26",
+      "label": "Blaise Pascal",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_27",
+      "label": "Maurice Blanchot",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_28",
+      "label": "Friedrich Dürrenmatt",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_29",
+      "label": "Elias Canetti",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_30",
+      "label": "Kazimir Malevich",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_31",
+      "label": "Dan Zahavi",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_32",
+      "label": "William Faulkner",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_33",
+      "label": "Herbert Simon",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_34",
+      "label": "Fernando Pessoa",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_35",
+      "label": "Myisha Cherry",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_36",
+      "label": "Viktor Frankl",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_37",
+      "label": "Charlie Chaplin",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_38",
+      "label": "C.G. Jung",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_39",
+      "label": "Henri Bergson",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_40",
+      "label": "Jean-Jacques Rousseau",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_41",
+      "label": "Pierre Bourdieu",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_42",
+      "label": "Hans Blumenberg",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_43",
+      "label": "Immanuel Kant",
+      "type": "philosopher",
+      "size": 40,
+      "connections": 16,
+      "articles": 6
+    },
+    {
+      "id": "phil_44",
+      "label": "Zeno",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_45",
+      "label": "Salvador Dalí",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_46",
+      "label": "Dan Millman",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_47",
+      "label": "Rousseau",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 5,
+      "articles": 1
+    },
+    {
+      "id": "phil_48",
+      "label": "Thomas Metzinger",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 2,
+      "articles": 2
+    },
+    {
+      "id": "phil_49",
+      "label": "Roland Barthes",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_50",
+      "label": "Thucydides",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 4,
+      "articles": 2
+    },
+    {
+      "id": "phil_51",
+      "label": "Jorge Luis Borges",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 1,
+      "articles": 2
+    },
+    {
+      "id": "phil_52",
+      "label": "Siegfried Kracauer",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_53",
+      "label": "Clarice Lispector",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_54",
+      "label": "Virginia Eubanks",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_55",
+      "label": "Byung-Chul Han",
+      "type": "philosopher",
+      "size": 30,
+      "connections": 15,
+      "articles": 4
+    },
+    {
+      "id": "phil_56",
+      "label": "Arthur Schopenhauer",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 7,
+      "articles": 2
+    },
+    {
+      "id": "phil_57",
+      "label": "Hartmut Rosa",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_58",
+      "label": "Thomas Nagel",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_59",
+      "label": "Hermann Hesse",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_60",
+      "label": "Niklas Luhmann",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_61",
+      "label": "Lisa Feldman Barrett",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_62",
+      "label": "Jacques Rancière",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 6,
+      "articles": 1
+    },
+    {
+      "id": "phil_63",
+      "label": "Barthes",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 5,
+      "articles": 1
+    },
+    {
+      "id": "phil_64",
+      "label": "Paul Feyerabend",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_65",
+      "label": "Edgar Allan Poe",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_66",
+      "label": "David Hume",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 4,
+      "articles": 2
+    },
+    {
+      "id": "phil_67",
+      "label": "Michael Harris",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_68",
+      "label": "Hilbert",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_69",
+      "label": "D.R. Khashaba",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_70",
+      "label": "Albert Camus",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 2,
+      "articles": 2
+    },
+    {
+      "id": "phil_71",
+      "label": "Ursula K. Le Guin",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_72",
+      "label": "Zhuangzi",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_73",
+      "label": "Georg Wilhelm Friedrich Hegel",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 5,
+      "articles": 1
+    },
+    {
+      "id": "phil_74",
+      "label": "David L. Goodstein",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_75",
+      "label": "Søren Kierkegaard",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_76",
+      "label": "B.F. Skinner",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 6,
+      "articles": 1
+    },
+    {
+      "id": "phil_77",
+      "label": "Aleister Crowley",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_78",
+      "label": "Marguerite Duras",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_79",
+      "label": "Noam Chomsky",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_80",
+      "label": "Audre Lorde",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_81",
+      "label": "Rainer Maria Rilke",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 3,
+      "articles": 2
+    },
+    {
+      "id": "phil_82",
+      "label": "Leonard Cohen",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_83",
+      "label": "John Collins",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_84",
+      "label": "Nietzsche",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_85",
+      "label": "Kant",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_86",
+      "label": "Hans-Georg Gadamer",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 5,
+      "articles": 1
+    },
+    {
+      "id": "phil_87",
+      "label": "Michel Foucault",
+      "type": "philosopher",
+      "size": 45,
+      "connections": 9,
+      "articles": 7
+    },
+    {
+      "id": "phil_88",
+      "label": "Harold Bloom",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_89",
+      "label": "Paul Watzlawick",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_90",
+      "label": "Simone Weil",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_91",
+      "label": "Milan Kundera",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_92",
+      "label": "Thomas Hobbes",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_93",
+      "label": "Jianwei Xun",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_94",
+      "label": "Frantz Fanon",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_95",
+      "label": "Aaron Beck",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_96",
+      "label": "Jean-Luc Godard",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_97",
+      "label": "Kracauer",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 5,
+      "articles": 1
+    },
+    {
+      "id": "phil_98",
+      "label": "Mira L. Siegelberg",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_99",
+      "label": "Cicero",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_100",
+      "label": "Henry David Thoreau",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_101",
+      "label": "Paulo Freire",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_102",
+      "label": "Carl Jung",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 2,
+      "articles": 2
+    },
+    {
+      "id": "phil_103",
+      "label": "Oliver Wendell Holmes Sr.",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_104",
+      "label": "Friedrich Nietzsche",
+      "type": "philosopher",
+      "size": 25,
+      "connections": 4,
+      "articles": 3
+    },
+    {
+      "id": "phil_105",
+      "label": "Maurice Merleau-Ponty",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 5,
+      "articles": 2
+    },
+    {
+      "id": "phil_106",
+      "label": "Husserl",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_107",
+      "label": "Marcel Proust",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 9,
+      "articles": 2
+    },
+    {
+      "id": "phil_108",
+      "label": "Aristotle",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_109",
+      "label": "Isaac Newton",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_110",
+      "label": "Walter Benjamin",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_111",
+      "label": "Anaïs Nin",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_112",
+      "label": "Andrea Colamedici",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_113",
+      "label": "Barney Rosset",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_114",
+      "label": "Jeremy Bentham",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_115",
+      "label": "Slavoj Žižek",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 6,
+      "articles": 1
+    },
+    {
+      "id": "phil_116",
+      "label": "Leven Brown",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_117",
+      "label": "Heidegger",
+      "type": "philosopher",
+      "size": 25,
+      "connections": 5,
+      "articles": 3
+    },
+    {
+      "id": "phil_118",
+      "label": "Peter Handke",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_119",
+      "label": "William James",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_120",
+      "label": "Tracey Emin",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_121",
+      "label": "Sigmund Freud",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_122",
+      "label": "Dostoyevsky",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_123",
+      "label": "Plotinus",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_124",
+      "label": "Robert Nozick",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 1,
+      "articles": 2
+    },
+    {
+      "id": "phil_125",
+      "label": "Socrates",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 3,
+      "articles": 1
+    },
+    {
+      "id": "phil_126",
+      "label": "Judith R. Goodstein",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_127",
+      "label": "Ruth Ozeki",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_128",
+      "label": "Simone de Beauvoir",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_129",
+      "label": "Jean-Paul Sartre",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_130",
+      "label": "Sir Ernest Shackleton",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_131",
+      "label": "Charles Bukowski",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_132",
+      "label": "Gerd Gigerenzer",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_133",
+      "label": "Niels Bohr",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 1,
+      "articles": 1
+    },
+    {
+      "id": "phil_134",
+      "label": "Hannah Arendt",
+      "type": "philosopher",
+      "size": 20,
+      "connections": 9,
+      "articles": 2
+    },
+    {
+      "id": "phil_135",
+      "label": "Baltasar Gracian",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_136",
+      "label": "David R. Hawkins",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_137",
+      "label": "Martin Heidegger",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_138",
+      "label": "Eric Schmidt",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_139",
+      "label": "Richard Feynman",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_140",
+      "label": "Michael Hornberger",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 0,
+      "articles": 1
+    },
+    {
+      "id": "phil_141",
+      "label": "Luhmann",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 5,
+      "articles": 1
+    },
+    {
+      "id": "phil_142",
+      "label": "Daniel R. DeNicola",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "phil_143",
+      "label": "Edmund Burke",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 4,
+      "articles": 1
+    },
+    {
+      "id": "phil_144",
+      "label": "Daniel Goleman",
+      "type": "philosopher",
+      "size": 15,
+      "connections": 2,
+      "articles": 1
+    },
+    {
+      "id": "art_0",
+      "label": "Deep Heart, Clear Mirror",
+      "fullTitle": "Deep Heart, Clear Mirror",
+      "subtitle": "Nighttime with False Mirrors: Dreams from the Future",
+      "type": "article",
+      "date": "2025-05-28T19:47:38.323000+00:00",
+      "year": 2025,
+      "month": 5,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_1",
+      "label": "On Whose Logic Counts",
+      "fullTitle": "On Whose Logic Counts",
+      "subtitle": "The Metabolic Economy of Meaning",
+      "type": "article",
+      "date": "2025-05-25T10:53:14.738000+00:00",
+      "year": 2025,
+      "month": 5,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_2",
+      "label": "Woods Burner: Think before you click",
+      "fullTitle": "Woods Burner: Think before you click",
+      "subtitle": "Digital Walden Ponds",
+      "type": "article",
+      "date": "2025-05-22T11:47:15.312000+00:00",
+      "year": 2025,
+      "month": 5,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_3",
+      "label": "Does feeling pain make us human?",
+      "fullTitle": "Does feeling pain make us human?",
+      "subtitle": "Painlessness creates a unique form of absence",
+      "type": "article",
+      "date": "2025-05-18T16:52:01.098000+00:00",
+      "year": 2025,
+      "month": 5,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_4",
+      "label": "Where do you pause, uncertain what follows?",
+      "fullTitle": "Where do you pause, uncertain what follows?",
+      "subtitle": "Trust in Problems Over Solutions",
+      "type": "article",
+      "date": "2025-05-16T20:35:18.440000+00:00",
+      "year": 2025,
+      "month": 5,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_5",
+      "label": "There are times when we must rebel",
+      "fullTitle": "There are times when we must rebel",
+      "subtitle": "How do we create a big change without taking on a tyrant's behavior?",
+      "type": "article",
+      "date": "2025-05-11T15:37:51.492000+00:00",
+      "year": 2025,
+      "month": 5,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_6",
+      "label": "When Data Controls You",
+      "fullTitle": "When Data Controls You",
+      "subtitle": "a study in hysteresis: Transparency and opacity",
+      "type": "article",
+      "date": "2025-05-07T16:57:51.287000+00:00",
+      "year": 2025,
+      "month": 5,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_7",
+      "label": "Algorithmic Ennui & The Politics of Boredom",
+      "fullTitle": "Algorithmic Ennui & The Politics of Boredom",
+      "subtitle": "Crystal-Clear Hearts: Phenomenology of Glass, Concrete, and Pixel",
+      "type": "article",
+      "date": "2025-05-01T17:50:30.111000+00:00",
+      "year": 2025,
+      "month": 5,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_8",
+      "label": "You just have to stop letting them control you",
+      "fullTitle": "You just have to stop letting them control you",
+      "subtitle": "Frequent Philosophical Discussions = Better Mental Health?",
+      "type": "article",
+      "date": "2025-04-29T16:34:27.628000+00:00",
+      "year": 2025,
+      "month": 4,
+      "size": 15,
+      "philosopherCount": 5
+    },
+    {
+      "id": "art_14",
+      "label": "truest cause: fear, honor, and interest",
+      "fullTitle": "truest cause: fear, honor, and interest",
+      "subtitle": "The Chromatic Politics of Emotion",
+      "type": "article",
+      "date": "2025-04-13T17:23:02.962000+00:00",
+      "year": 2025,
+      "month": 4,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_15",
+      "label": "The Flight From Pain to Ennui",
+      "fullTitle": "The Flight From Pain to Ennui",
+      "subtitle": "The Contemplative Economy: The Missing Ingredient",
+      "type": "article",
+      "date": "2025-04-09T09:40:25.886000+00:00",
+      "year": 2025,
+      "month": 4,
+      "size": 15,
+      "philosopherCount": 6
+    },
+    {
+      "id": "art_16",
+      "label": "To be angry with the right person",
+      "fullTitle": "To be angry with the right person",
+      "subtitle": "Emotional Meteorology: never experiencing difficult weather!",
+      "type": "article",
+      "date": "2025-04-07T15:22:09.771000+00:00",
+      "year": 2025,
+      "month": 4,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_17",
+      "label": "Hypnocracy. How the latest stories are being sprea...",
+      "fullTitle": "Hypnocracy. How the latest stories are being spread",
+      "subtitle": "The regime to numb critical thinking. Consensual Hallucination as Liberation",
+      "type": "article",
+      "date": "2025-04-05T14:15:37.479000+00:00",
+      "year": 2025,
+      "month": 4,
+      "size": 15,
+      "philosopherCount": 4
+    },
+    {
+      "id": "art_18",
+      "label": "There is a certain beauty in chaos",
+      "fullTitle": "There is a certain beauty in chaos",
+      "subtitle": "Aesthetic Friction: The Beauty of Resistance",
+      "type": "article",
+      "date": "2025-04-02T16:45:43.118000+00:00",
+      "year": 2025,
+      "month": 4,
+      "size": 15,
+      "philosopherCount": 5
+    },
+    {
+      "id": "art_19",
+      "label": "What We Cannot Touch",
+      "fullTitle": "What We Cannot Touch",
+      "subtitle": "where mind and reality meet",
+      "type": "article",
+      "date": "2025-03-31T19:30:05.235000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 5
+    },
+    {
+      "id": "art_20",
+      "label": "You are made and remade all the time",
+      "fullTitle": "You are made and remade all the time",
+      "subtitle": "Trump's approach creates a perpetual present ",
+      "type": "article",
+      "date": "2025-03-29T13:42:20.065000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_21",
+      "label": "the rest we take between two deep breaths",
+      "fullTitle": "the rest we take between two deep breaths",
+      "subtitle": "Resilience Through Small Acts",
+      "type": "article",
+      "date": "2025-03-26T09:51:57.526000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_22",
+      "label": "The relationship between anxiety and creativity",
+      "fullTitle": "The relationship between anxiety and creativity",
+      "subtitle": "You essential engine of creative momentum",
+      "type": "article",
+      "date": "2025-03-24T16:47:43.933000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 4
+    },
+    {
+      "id": "art_23",
+      "label": "Words Create Our Reality ",
+      "fullTitle": "Words Create Our Reality ",
+      "subtitle": "You are a victim of the rules you live by. Linguistic Antibodies",
+      "type": "article",
+      "date": "2025-03-22T13:37:40.388000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_24",
+      "label": "Disciplinary power produces docile bodies; psychop...",
+      "fullTitle": "Disciplinary power produces docile bodies; psychopolitics produces docile psyches",
+      "subtitle": "The Invisible Cruelty of Kindness",
+      "type": "article",
+      "date": "2025-03-17T16:04:14.571000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_25",
+      "label": "Psychopolitics. If enough data are available, no t...",
+      "fullTitle": "Psychopolitics. If enough data are available, no theory is needed",
+      "subtitle": "How digital platforms increasingly simulate empathy and emotional support ",
+      "type": "article",
+      "date": "2025-03-15T11:22:46.988000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 5
+    },
+    {
+      "id": "art_27",
+      "label": "Be convinced that to be happy means to be free ",
+      "fullTitle": "Be convinced that to be happy means to be free ",
+      "subtitle": "and that to be free means to be brave*",
+      "type": "article",
+      "date": "2025-03-10T07:46:31.699000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_28",
+      "label": "The Dream of Darkening Splendor",
+      "fullTitle": "The Dream of Darkening Splendor",
+      "subtitle": "Realize deeply that the present moment is all you have",
+      "type": "article",
+      "date": "2025-03-08T16:24:35.851000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 4
+    },
+    {
+      "id": "art_29",
+      "label": "To be understood is to prostitute oneself",
+      "fullTitle": "To be understood is to prostitute oneself",
+      "subtitle": "I prefer to be taken seriously for what I’m not, remaining humanly unknown",
+      "type": "article",
+      "date": "2025-03-05T09:17:42.719000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 4
+    },
+    {
+      "id": "art_30",
+      "label": "The harder you look, the less you feel",
+      "fullTitle": "The harder you look, the less you feel",
+      "subtitle": "Architecture of Disorientation. Relearning Perception Through Lostness",
+      "type": "article",
+      "date": "2025-03-02T11:59:24.230000+00:00",
+      "year": 2025,
+      "month": 3,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_31",
+      "label": "What do we do with our fears? ",
+      "fullTitle": "What do we do with our fears? ",
+      "subtitle": "How to Gently Transform Your Deepest Fears into Lasting Peace",
+      "type": "article",
+      "date": "2025-02-28T16:42:11.622000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_32",
+      "label": "Memory Techniques as Ritualistic Performance",
+      "fullTitle": "Memory Techniques as Ritualistic Performance",
+      "subtitle": "Visualize losing what you love, then you can only see the positive",
+      "type": "article",
+      "date": "2025-02-26T17:23:34.592000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_33",
+      "label": "We do not see things as they are, we see them as w...",
+      "fullTitle": "We do not see things as they are, we see them as we are",
+      "subtitle": "The Dream of Gnarled Contradiction",
+      "type": "article",
+      "date": "2025-02-24T22:02:28.441000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_35",
+      "label": "Hyper-Rational Society descends into Absurdity",
+      "fullTitle": "Hyper-Rational Society descends into Absurdity",
+      "subtitle": "Emotional Contraband in Surveillance Capitalism",
+      "type": "article",
+      "date": "2025-02-22T15:43:12.124000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_36",
+      "label": "Reasonable worlds are built with verbs, not nouns",
+      "fullTitle": "Reasonable worlds are built with verbs, not nouns",
+      "subtitle": "Identity as Performance",
+      "type": "article",
+      "date": "2025-02-19T10:53:22.879000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_37",
+      "label": "We are bridges swaying between islands",
+      "fullTitle": "We are bridges swaying between islands",
+      "subtitle": "No Grand Problem, Only Little Ones: The Beauty of the Incomplete",
+      "type": "article",
+      "date": "2025-02-16T12:29:16.177000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 5
+    },
+    {
+      "id": "art_38",
+      "label": "You must first dissolve into the collective dream",
+      "fullTitle": "You must first dissolve into the collective dream",
+      "subtitle": "Your emotional health isn’t only private",
+      "type": "article",
+      "date": "2025-02-14T11:01:16.598000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_39",
+      "label": "What Keeps My Heart Awake is Absence",
+      "fullTitle": "What Keeps My Heart Awake is Absence",
+      "subtitle": "The Incomplete Can Be More Evocative Than the Whole",
+      "type": "article",
+      "date": "2025-02-12T20:42:45.363000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_42",
+      "label": "I paint my own reality",
+      "fullTitle": "I paint my own reality",
+      "subtitle": "The Dream of Indiscernible Tranquility",
+      "type": "article",
+      "date": "2025-02-06T17:10:06.597000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_43",
+      "label": "The Dream of Stretched Cognition",
+      "fullTitle": "The Dream of Stretched Cognition",
+      "subtitle": "where the raw pulse of the possible resides",
+      "type": "article",
+      "date": "2025-02-04T13:48:41.860000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_44",
+      "label": "The Dream of Overcast Infinity",
+      "fullTitle": "The Dream of Overcast Infinity",
+      "subtitle": "Your Boundless Possibility: New Perspectives",
+      "type": "article",
+      "date": "2025-02-01T11:46:19.797000+00:00",
+      "year": 2025,
+      "month": 2,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_45",
+      "label": "Bodies as Trace Fossils in Digital Time ",
+      "fullTitle": "Bodies as Trace Fossils in Digital Time ",
+      "subtitle": "Identity will be the most valuable asset, mainly online",
+      "type": "article",
+      "date": "2025-01-29T19:29:02.756000+00:00",
+      "year": 2025,
+      "month": 1,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_47",
+      "label": "Radical Honesty and the Transparent Self",
+      "fullTitle": "Radical Honesty and the Transparent Self",
+      "subtitle": "Pain as a Currency in the Hedonic Marketplace",
+      "type": "article",
+      "date": "2025-01-22T17:20:54.012000+00:00",
+      "year": 2025,
+      "month": 1,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_48",
+      "label": "Self, Crowd, Destruction, Truth: A Fluid Perspecti...",
+      "fullTitle": "Self, Crowd, Destruction, Truth: A Fluid Perspective",
+      "subtitle": "*There are no facts, only interpretations",
+      "type": "article",
+      "date": "2025-01-19T18:11:04.063000+00:00",
+      "year": 2025,
+      "month": 1,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_49",
+      "label": "Between wakefulness and sleep",
+      "fullTitle": "Between wakefulness and sleep",
+      "subtitle": "Radical Slowdown Strategies: Mental “Back Shop” Ritual",
+      "type": "article",
+      "date": "2025-01-17T19:15:16.241000+00:00",
+      "year": 2025,
+      "month": 1,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_50",
+      "label": "Data Entrepreneur: Engineering Collective Amnesia ",
+      "fullTitle": "Data Entrepreneur: Engineering Collective Amnesia ",
+      "subtitle": "A social engineering arms race",
+      "type": "article",
+      "date": "2025-01-14T19:52:20.094000+00:00",
+      "year": 2025,
+      "month": 1,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_51",
+      "label": "Reshape Your Routine: Discipline is a political an...",
+      "fullTitle": "Reshape Your Routine: Discipline is a political anatomy of detail",
+      "subtitle": "The Modern Panopticism. Drilled to march in Time",
+      "type": "article",
+      "date": "2025-01-11T11:48:21.468000+00:00",
+      "year": 2025,
+      "month": 1,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_52",
+      "label": "Navigating Uncertainty with Intuitive Resolve",
+      "fullTitle": "Navigating Uncertainty with Intuitive Resolve",
+      "subtitle": "The Order: anything goes",
+      "type": "article",
+      "date": "2025-01-09T14:10:56.557000+00:00",
+      "year": 2025,
+      "month": 1,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_54",
+      "label": "The Myth of the Unbearable Lightness of Being",
+      "fullTitle": "The Myth of the Unbearable Lightness of Being",
+      "subtitle": "The white line marks our desire for clarity",
+      "type": "article",
+      "date": "2025-01-02T10:00:48.776000+00:00",
+      "year": 2025,
+      "month": 1,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_55",
+      "label": "Marcel Proust ’s Secret to Creative Clarity",
+      "fullTitle": "Marcel Proust ’s Secret to Creative Clarity",
+      "subtitle": "Inactivity as a Catalyst for Genius",
+      "type": "article",
+      "date": "2024-12-28T14:32:21.810000+00:00",
+      "year": 2024,
+      "month": 12,
+      "size": 15,
+      "philosopherCount": 5
+    },
+    {
+      "id": "art_56",
+      "label": "A new, gentle approach to punishment",
+      "fullTitle": "A new, gentle approach to punishment",
+      "subtitle": "An economy of suspended rights",
+      "type": "article",
+      "date": "2024-12-25T19:15:59.670000+00:00",
+      "year": 2024,
+      "month": 12,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_57",
+      "label": "How have prisons shaped our society?",
+      "fullTitle": "How have prisons shaped our society?",
+      "subtitle": "Punishment has evolved; this series explores how.",
+      "type": "article",
+      "date": "2024-12-22T13:52:32.983000+00:00",
+      "year": 2024,
+      "month": 12,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_58",
+      "label": "CEO Killing & Transparency: Unseen Wounds",
+      "fullTitle": "CEO Killing & Transparency: Unseen Wounds",
+      "subtitle": "The CEO corridors of moral emptiness in our entangled systems",
+      "type": "article",
+      "date": "2024-12-18T11:06:58.741000+00:00",
+      "year": 2024,
+      "month": 12,
+      "size": 15,
+      "philosopherCount": 6
+    },
+    {
+      "id": "art_61",
+      "label": "Towards Our Illusory Freedoms",
+      "fullTitle": "Towards Our Illusory Freedoms",
+      "subtitle": "Opaque architecture of preemption and compulsion",
+      "type": "article",
+      "date": "2024-12-07T12:45:43.532000+00:00",
+      "year": 2024,
+      "month": 12,
+      "size": 15,
+      "philosopherCount": 7
+    },
+    {
+      "id": "art_62",
+      "label": "Embodied Absence",
+      "fullTitle": "Embodied Absence",
+      "subtitle": "The Physics of Missing",
+      "type": "article",
+      "date": "2024-12-04T08:49:19.115000+00:00",
+      "year": 2024,
+      "month": 12,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_63",
+      "label": "Absence Automated",
+      "fullTitle": "Absence Automated",
+      "subtitle": "Can absence be automated intentionally?",
+      "type": "article",
+      "date": "2024-11-30T16:43:28.770000+00:00",
+      "year": 2024,
+      "month": 11,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_64",
+      "label": "Between knowledge and ignorance",
+      "fullTitle": "Between knowledge and ignorance",
+      "subtitle": "What Does it Mean to Orient Oneself in Thinking?",
+      "type": "article",
+      "date": "2024-11-24T12:31:04.300000+00:00",
+      "year": 2024,
+      "month": 11,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_65",
+      "label": "Absence itself is too obvious to be true",
+      "fullTitle": "Absence itself is too obvious to be true",
+      "subtitle": "The Experience Machine",
+      "type": "article",
+      "date": "2024-11-18T17:25:07.056000+00:00",
+      "year": 2024,
+      "month": 11,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_66",
+      "label": "Caution of free spirits",
+      "fullTitle": "Caution of free spirits",
+      "subtitle": "The Geography of Non-Existence",
+      "type": "article",
+      "date": "2024-11-12T09:45:19.937000+00:00",
+      "year": 2024,
+      "month": 11,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_69",
+      "label": "As pure as white fresh fallen snow",
+      "fullTitle": "As pure as white fresh fallen snow",
+      "subtitle": "Catastrophe Management. When Clarity Breaks the Heart ",
+      "type": "article",
+      "date": "2024-10-31T19:14:14.608000+00:00",
+      "year": 2024,
+      "month": 10,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_70",
+      "label": "The Walnut of Reality",
+      "fullTitle": "The Walnut of Reality",
+      "subtitle": "When Solid Ground Dissolves",
+      "type": "article",
+      "date": "2024-10-27T14:46:24.242000+00:00",
+      "year": 2024,
+      "month": 10,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_71",
+      "label": "When Light Holds Its Breath",
+      "fullTitle": "When Light Holds Its Breath",
+      "subtitle": "A wise man extends this lesson to all areas",
+      "type": "article",
+      "date": "2024-10-24T17:58:19.898000+00:00",
+      "year": 2024,
+      "month": 10,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_72",
+      "label": "Laughing without feeling",
+      "fullTitle": "Laughing without feeling",
+      "subtitle": "When Joy Leaves No Trace",
+      "type": "article",
+      "date": "2024-10-18T10:07:12.685000+00:00",
+      "year": 2024,
+      "month": 10,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_73",
+      "label": "Why do people keep photographs?",
+      "fullTitle": "Why do people keep photographs?",
+      "subtitle": "To take one is to participate in another’s absence",
+      "type": "article",
+      "date": "2024-10-12T11:11:14.619000+00:00",
+      "year": 2024,
+      "month": 10,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_74",
+      "label": "It's not what you see that is art",
+      "fullTitle": "It's not what you see that is art",
+      "subtitle": "The Quiet Rebellion",
+      "type": "article",
+      "date": "2024-10-07T09:46:44.205000+00:00",
+      "year": 2024,
+      "month": 10,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_75",
+      "label": "absence of ideas",
+      "fullTitle": "absence of ideas",
+      "subtitle": "Pure perception: the self-cancellation",
+      "type": "article",
+      "date": "2024-10-15T17:56:30.472000+00:00",
+      "year": 2024,
+      "month": 10,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_76",
+      "label": "What I cannot create, I do not understand",
+      "fullTitle": "What I cannot create, I do not understand",
+      "subtitle": "The Geometry of Lost Thoughts",
+      "type": "article",
+      "date": "2024-10-03T19:27:06.098000+00:00",
+      "year": 2024,
+      "month": 10,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_77",
+      "label": "The Question of Being",
+      "fullTitle": "The Question of Being",
+      "subtitle": "The Presence in Absence",
+      "type": "article",
+      "date": "2024-09-26T20:13:27.107000+00:00",
+      "year": 2024,
+      "month": 9,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_78",
+      "label": "Fear of freedom",
+      "fullTitle": "Fear of freedom",
+      "subtitle": "Pedagogy of Oppressed",
+      "type": "article",
+      "date": "2024-09-22T15:06:31.427000+00:00",
+      "year": 2024,
+      "month": 9,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_80",
+      "label": "In the silence between words, power speaks ",
+      "fullTitle": "In the silence between words, power speaks ",
+      "subtitle": "Theory of Power",
+      "type": "article",
+      "date": "2024-09-13T15:59:04.265000+00:00",
+      "year": 2024,
+      "month": 9,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_81",
+      "label": "Null Resonance",
+      "fullTitle": "Null Resonance",
+      "subtitle": "When the Universe Stops Answering Back",
+      "type": "article",
+      "date": "2024-09-04T16:24:56.987000+00:00",
+      "year": 2024,
+      "month": 9,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_82",
+      "label": "Things Which Should Never Be Spoken Of",
+      "fullTitle": "Things Which Should Never Be Spoken Of",
+      "subtitle": "The Third Man",
+      "type": "article",
+      "date": "2024-08-30T16:47:40.486000+00:00",
+      "year": 2024,
+      "month": 8,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_83",
+      "label": "To become presence, means accepting the risk of ab...",
+      "fullTitle": "To become presence, means accepting the risk of absence",
+      "subtitle": "The misuse of words",
+      "type": "article",
+      "date": "2024-09-01T08:10:55.928000+00:00",
+      "year": 2024,
+      "month": 9,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_84",
+      "label": "One of the points in space that contains all other...",
+      "fullTitle": "One of the points in space that contains all other points.",
+      "subtitle": "The Aleph: Depth in a World of Pixels",
+      "type": "article",
+      "date": "2024-08-24T14:15:09.927000+00:00",
+      "year": 2024,
+      "month": 8,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_85",
+      "label": "Science discovers, technology exploits, man adapts",
+      "fullTitle": "Science discovers, technology exploits, man adapts",
+      "subtitle": "New models of reality",
+      "type": "article",
+      "date": "2024-08-20T16:39:08.601000+00:00",
+      "year": 2024,
+      "month": 8,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_86",
+      "label": "Absence of the Hero ",
+      "fullTitle": "Absence of the Hero ",
+      "subtitle": "The Heart is a Lonely Hunter",
+      "type": "article",
+      "date": "2024-08-17T18:59:32.558000+00:00",
+      "year": 2024,
+      "month": 8,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_87",
+      "label": "The Fear of being Touched",
+      "fullTitle": "The Fear of being Touched",
+      "subtitle": "Only in a crowd can one escape the fear of touch.",
+      "type": "article",
+      "date": "2024-08-13T13:53:46.935000+00:00",
+      "year": 2024,
+      "month": 8,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_88",
+      "label": "Good taste is always sure of its judgment",
+      "fullTitle": "Good taste is always sure of its judgment",
+      "subtitle": "The Art of Becoming the Artwork",
+      "type": "article",
+      "date": "2024-08-10T17:19:24.046000+00:00",
+      "year": 2024,
+      "month": 8,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_89",
+      "label": "The Apogee of Mental Relaxation",
+      "fullTitle": "The Apogee of Mental Relaxation",
+      "subtitle": "Gray: The Color of Infinite Potential",
+      "type": "article",
+      "date": "2024-08-07T07:30:35.903000+00:00",
+      "year": 2024,
+      "month": 8,
+      "size": 15,
+      "philosopherCount": 2
+    },
+    {
+      "id": "art_90",
+      "label": "Crystal clear heart",
+      "fullTitle": "Crystal clear heart",
+      "subtitle": "The Panopticon: The Hidden Cost of Our Digital Lives",
+      "type": "article",
+      "date": "2024-08-03T15:53:43.618000+00:00",
+      "year": 2024,
+      "month": 8,
+      "size": 15,
+      "philosopherCount": 4
+    },
+    {
+      "id": "art_92",
+      "label": "The uncomfortable silence is what I love,",
+      "fullTitle": "The uncomfortable silence is what I love,",
+      "subtitle": "Symptom Strategy",
+      "type": "article",
+      "date": "2024-07-28T07:30:17.068000+00:00",
+      "year": 2024,
+      "month": 7,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_94",
+      "label": "Your Silence, My Sanctuary",
+      "fullTitle": "Your Silence, My Sanctuary",
+      "subtitle": "The Ripple Effect",
+      "type": "article",
+      "date": "2024-07-20T09:11:12.413000+00:00",
+      "year": 2024,
+      "month": 7,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_95",
+      "label": "The Weight of Emptiness",
+      "fullTitle": "The Weight of Emptiness",
+      "subtitle": "Ruth Ozeki's \"The Book of Form and Emptiness\"",
+      "type": "article",
+      "date": "2024-07-17T20:48:11.670000+00:00",
+      "year": 2024,
+      "month": 7,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_96",
+      "label": "Monochrome Meditations",
+      "fullTitle": "Monochrome Meditations",
+      "subtitle": "Chromatic Delight, Monochrome Soul",
+      "type": "article",
+      "date": "2024-07-16T02:54:40.760000+00:00",
+      "year": 2024,
+      "month": 7,
+      "size": 15,
+      "philosopherCount": 1
+    },
+    {
+      "id": "art_97",
+      "label": "Blank Pages, Full Lives: Rewriting Our Relationshi...",
+      "fullTitle": "Blank Pages, Full Lives: Rewriting Our Relationship with Absence",
+      "subtitle": "Rediscovering Absence in a Hyper-Connected World",
+      "type": "article",
+      "date": "2024-07-11T08:17:51.524000+00:00",
+      "year": 2024,
+      "month": 7,
+      "size": 15,
+      "philosopherCount": 3
+    },
+    {
+      "id": "art_98",
+      "label": "The Paradox of Absence",
+      "fullTitle": "The Paradox of Absence",
+      "subtitle": "A Monochrome Meditation",
+      "type": "article",
+      "date": "2024-07-07T16:18:51.452000+00:00",
+      "year": 2024,
+      "month": 7,
+      "size": 15,
+      "philosopherCount": 1
+    }
+  ],
+  "edges": [
+    {
+      "from": "phil_31",
+      "to": "art_0",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_35",
+      "to": "art_0",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_80",
+      "to": "art_0",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_33",
+      "to": "art_1",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_132",
+      "to": "art_1",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_8",
+      "to": "art_1",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_100",
+      "to": "art_2",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "art_2",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_7",
+      "to": "art_2",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_53",
+      "to": "art_3",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_122",
+      "to": "art_3",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_71",
+      "to": "art_4",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_58",
+      "to": "art_4",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_70",
+      "to": "art_5",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_94",
+      "to": "art_5",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_32",
+      "to": "art_6",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_41",
+      "to": "art_6",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_20",
+      "to": "art_7",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_82",
+      "to": "art_8",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_4",
+      "to": "art_8",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_95",
+      "to": "art_8",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_36",
+      "to": "art_8",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_46",
+      "to": "art_8",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_104",
+      "to": "art_14",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_137",
+      "to": "art_14",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_99",
+      "to": "art_14",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "art_15",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_56",
+      "to": "art_15",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_25",
+      "to": "art_15",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_73",
+      "to": "art_15",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "art_15",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_86",
+      "to": "art_15",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_2",
+      "to": "art_16",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_113",
+      "to": "art_16",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_1",
+      "to": "art_17",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_125",
+      "to": "art_17",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_69",
+      "to": "art_17",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_134",
+      "to": "art_17",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_50",
+      "to": "art_18",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_23",
+      "to": "art_18",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_92",
+      "to": "art_18",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_3",
+      "to": "art_18",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_13",
+      "to": "art_18",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_21",
+      "to": "art_19",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_26",
+      "to": "art_19",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_72",
+      "to": "art_19",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_123",
+      "to": "art_19",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_90",
+      "to": "art_19",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_108",
+      "to": "art_20",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_144",
+      "to": "art_20",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_61",
+      "to": "art_20",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_93",
+      "to": "art_21",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_112",
+      "to": "art_21",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "art_22",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_27",
+      "to": "art_22",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_81",
+      "to": "art_22",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "art_22",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_66",
+      "to": "art_23",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "art_23",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_79",
+      "to": "art_24",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_87",
+      "to": "art_24",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_143",
+      "to": "art_25",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_11",
+      "to": "art_25",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_25",
+      "to": "art_25",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "art_25",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "art_25",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_50",
+      "to": "art_27",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_9",
+      "to": "art_28",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_105",
+      "to": "art_28",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_106",
+      "to": "art_28",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_37",
+      "to": "art_28",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_34",
+      "to": "art_29",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_65",
+      "to": "art_29",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_77",
+      "to": "art_29",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_88",
+      "to": "art_29",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_105",
+      "to": "art_30",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_78",
+      "to": "art_30",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_104",
+      "to": "art_30",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_121",
+      "to": "art_31",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_38",
+      "to": "art_31",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_140",
+      "to": "art_32",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_133",
+      "to": "art_33",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_111",
+      "to": "art_33",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_96",
+      "to": "art_35",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_18",
+      "to": "art_36",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_14",
+      "to": "art_36",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_28",
+      "to": "art_36",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_22",
+      "to": "art_37",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_83",
+      "to": "art_37",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_109",
+      "to": "art_37",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_66",
+      "to": "art_37",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "art_37",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_102",
+      "to": "art_38",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_136",
+      "to": "art_38",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_56",
+      "to": "art_38",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_117",
+      "to": "art_39",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_12",
+      "to": "art_42",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_103",
+      "to": "art_43",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_75",
+      "to": "art_43",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_119",
+      "to": "art_44",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_44",
+      "to": "art_44",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_68",
+      "to": "art_44",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_138",
+      "to": "art_45",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_124",
+      "to": "art_47",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_5",
+      "to": "art_47",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_104",
+      "to": "art_48",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_1",
+      "to": "art_49",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_87",
+      "to": "art_50",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_87",
+      "to": "art_51",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_64",
+      "to": "art_52",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_91",
+      "to": "art_54",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_70",
+      "to": "art_54",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "art_55",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_12",
+      "to": "art_55",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_128",
+      "to": "art_55",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_45",
+      "to": "art_55",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_120",
+      "to": "art_55",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_87",
+      "to": "art_56",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_87",
+      "to": "art_57",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "art_58",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_47",
+      "to": "art_58",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_63",
+      "to": "art_58",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_97",
+      "to": "art_58",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_117",
+      "to": "art_58",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_141",
+      "to": "art_58",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "art_61",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_16",
+      "to": "art_61",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_87",
+      "to": "art_61",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_76",
+      "to": "art_61",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_115",
+      "to": "art_61",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_134",
+      "to": "art_61",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_62",
+      "to": "art_61",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_81",
+      "to": "art_62",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_54",
+      "to": "art_63",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_85",
+      "to": "art_64",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_48",
+      "to": "art_64",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_142",
+      "to": "art_64",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_124",
+      "to": "art_65",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_84",
+      "to": "art_66",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_98",
+      "to": "art_66",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_42",
+      "to": "art_69",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_39",
+      "to": "art_70",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_102",
+      "to": "art_71",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_116",
+      "to": "art_72",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_19",
+      "to": "art_73",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_6",
+      "to": "art_74",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_15",
+      "to": "art_74",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_48",
+      "to": "art_75",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_139",
+      "to": "art_76",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_74",
+      "to": "art_76",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_126",
+      "to": "art_76",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_117",
+      "to": "art_77",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_101",
+      "to": "art_78",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_60",
+      "to": "art_80",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_57",
+      "to": "art_81",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_130",
+      "to": "art_82",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_51",
+      "to": "art_82",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_10",
+      "to": "art_83",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_51",
+      "to": "art_84",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_17",
+      "to": "art_85",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_131",
+      "to": "art_86",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_29",
+      "to": "art_87",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_129",
+      "to": "art_87",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_135",
+      "to": "art_88",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "art_88",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_49",
+      "to": "art_88",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_52",
+      "to": "art_89",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_110",
+      "to": "art_89",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "art_90",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_40",
+      "to": "art_90",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_114",
+      "to": "art_90",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_87",
+      "to": "art_90",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_89",
+      "to": "art_92",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_59",
+      "to": "art_94",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_127",
+      "to": "art_95",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_24",
+      "to": "art_96",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "art_97",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_67",
+      "to": "art_97",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_118",
+      "to": "art_97",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_30",
+      "to": "art_98",
+      "type": "authored",
+      "weight": 1
+    },
+    {
+      "from": "phil_31",
+      "to": "phil_35",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_31",
+      "to": "phil_80",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_35",
+      "to": "phil_80",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_132",
+      "to": "phil_33",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_33",
+      "to": "phil_8",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_132",
+      "to": "phil_8",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_100",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_100",
+      "to": "phil_7",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "phil_7",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_122",
+      "to": "phil_53",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_58",
+      "to": "phil_71",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_70",
+      "to": "phil_94",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_32",
+      "to": "phil_41",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_4",
+      "to": "phil_82",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_82",
+      "to": "phil_95",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_36",
+      "to": "phil_82",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_46",
+      "to": "phil_82",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_4",
+      "to": "phil_95",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_36",
+      "to": "phil_4",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_4",
+      "to": "phil_46",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_36",
+      "to": "phil_95",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_46",
+      "to": "phil_95",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_36",
+      "to": "phil_46",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_104",
+      "to": "phil_137",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_104",
+      "to": "phil_99",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_137",
+      "to": "phil_99",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "phil_56",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_25",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "phil_73",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "phil_86",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_25",
+      "to": "phil_56",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_56",
+      "to": "phil_73",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_56",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_56",
+      "to": "phil_86",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_25",
+      "to": "phil_73",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_25",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_25",
+      "to": "phil_86",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_73",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_73",
+      "to": "phil_86",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_86",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_113",
+      "to": "phil_2",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_1",
+      "to": "phil_125",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_1",
+      "to": "phil_69",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_1",
+      "to": "phil_134",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_125",
+      "to": "phil_69",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_125",
+      "to": "phil_134",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_134",
+      "to": "phil_69",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_23",
+      "to": "phil_50",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_50",
+      "to": "phil_92",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_3",
+      "to": "phil_50",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_13",
+      "to": "phil_50",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_23",
+      "to": "phil_92",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_23",
+      "to": "phil_3",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_13",
+      "to": "phil_23",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_3",
+      "to": "phil_92",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_13",
+      "to": "phil_92",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_13",
+      "to": "phil_3",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_21",
+      "to": "phil_26",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_21",
+      "to": "phil_72",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_123",
+      "to": "phil_21",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_21",
+      "to": "phil_90",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_26",
+      "to": "phil_72",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_123",
+      "to": "phil_26",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_26",
+      "to": "phil_90",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_123",
+      "to": "phil_72",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_72",
+      "to": "phil_90",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_123",
+      "to": "phil_90",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_108",
+      "to": "phil_144",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_108",
+      "to": "phil_61",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_144",
+      "to": "phil_61",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_112",
+      "to": "phil_93",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_27",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "phil_81",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_27",
+      "to": "phil_81",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "phil_27",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "phil_81",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "phil_66",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_79",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_11",
+      "to": "phil_143",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_143",
+      "to": "phil_25",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_143",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "phil_143",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_11",
+      "to": "phil_25",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_11",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "phil_11",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "phil_25",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_105",
+      "to": "phil_9",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_106",
+      "to": "phil_9",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_37",
+      "to": "phil_9",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_105",
+      "to": "phil_106",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_105",
+      "to": "phil_37",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_106",
+      "to": "phil_37",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_34",
+      "to": "phil_65",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_34",
+      "to": "phil_77",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_34",
+      "to": "phil_88",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_65",
+      "to": "phil_77",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_65",
+      "to": "phil_88",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_77",
+      "to": "phil_88",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_105",
+      "to": "phil_78",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_104",
+      "to": "phil_105",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_104",
+      "to": "phil_78",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_121",
+      "to": "phil_38",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_111",
+      "to": "phil_133",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_14",
+      "to": "phil_18",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_18",
+      "to": "phil_28",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_14",
+      "to": "phil_28",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_22",
+      "to": "phil_83",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_109",
+      "to": "phil_22",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_22",
+      "to": "phil_66",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_22",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_109",
+      "to": "phil_83",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_66",
+      "to": "phil_83",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "phil_83",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_109",
+      "to": "phil_66",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_109",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_102",
+      "to": "phil_136",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_102",
+      "to": "phil_56",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_136",
+      "to": "phil_56",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_103",
+      "to": "phil_75",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_119",
+      "to": "phil_44",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_119",
+      "to": "phil_68",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_44",
+      "to": "phil_68",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_124",
+      "to": "phil_5",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_70",
+      "to": "phil_91",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_12",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_128",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_45",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_107",
+      "to": "phil_120",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_12",
+      "to": "phil_128",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_12",
+      "to": "phil_45",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_12",
+      "to": "phil_120",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_128",
+      "to": "phil_45",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_120",
+      "to": "phil_128",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_120",
+      "to": "phil_45",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_47",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "phil_63",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "phil_97",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_117",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_141",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_47",
+      "to": "phil_63",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_47",
+      "to": "phil_97",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_117",
+      "to": "phil_47",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_141",
+      "to": "phil_47",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_63",
+      "to": "phil_97",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_117",
+      "to": "phil_63",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_141",
+      "to": "phil_63",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_117",
+      "to": "phil_97",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_141",
+      "to": "phil_97",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_117",
+      "to": "phil_141",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_16",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "phil_76",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_115",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_134",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_55",
+      "to": "phil_62",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_16",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_16",
+      "to": "phil_76",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_115",
+      "to": "phil_16",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_134",
+      "to": "phil_16",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_16",
+      "to": "phil_62",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_76",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_115",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_134",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_62",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_115",
+      "to": "phil_76",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_134",
+      "to": "phil_76",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_62",
+      "to": "phil_76",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_115",
+      "to": "phil_134",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_115",
+      "to": "phil_62",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_134",
+      "to": "phil_62",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_48",
+      "to": "phil_85",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_142",
+      "to": "phil_85",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_142",
+      "to": "phil_48",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_84",
+      "to": "phil_98",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_15",
+      "to": "phil_6",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_139",
+      "to": "phil_74",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_126",
+      "to": "phil_139",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_126",
+      "to": "phil_74",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_130",
+      "to": "phil_51",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_129",
+      "to": "phil_29",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_135",
+      "to": "phil_43",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_135",
+      "to": "phil_49",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_43",
+      "to": "phil_49",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_110",
+      "to": "phil_52",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_40",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_114",
+      "to": "phil_55",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_114",
+      "to": "phil_40",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_40",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_114",
+      "to": "phil_87",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "phil_67",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_0",
+      "to": "phil_118",
+      "type": "collaboration",
+      "weight": 1
+    },
+    {
+      "from": "phil_118",
+      "to": "phil_67",
+      "type": "collaboration",
+      "weight": 1
+    }
+  ],
+  "statistics": {
+    "totalPhilosophers": 145,
+    "totalArticles": 81,
+    "totalConnections": 374,
+    "collaborationEdges": 194,
+    "authoringEdges": 180,
+    "dateRange": {
+      "start": "2024-07-02T20:33:32.339000+00:00",
+      "end": "2025-05-28T19:47:38.323000+00:00"
+    }
+  },
+  "topPhilosophers": [
+    {
+      "name": "Michel Foucault",
+      "articles": 7,
+      "connections": 9
+    },
+    {
+      "name": "Immanuel Kant",
+      "articles": 6,
+      "connections": 16
+    },
+    {
+      "name": "Byung-Chul Han",
+      "articles": 4,
+      "connections": 15
+    },
+    {
+      "name": "Friedrich Nietzsche",
+      "articles": 3,
+      "connections": 4
+    },
+    {
+      "name": "Theodor W. Adorno",
+      "articles": 3,
+      "connections": 8
+    },
+    {
+      "name": "Heidegger",
+      "articles": 3,
+      "connections": 5
+    },
+    {
+      "name": "Albert Camus",
+      "articles": 2,
+      "connections": 2
+    },
+    {
+      "name": "Arthur Schopenhauer",
+      "articles": 2,
+      "connections": 7
+    },
+    {
+      "name": "Plato",
+      "articles": 2,
+      "connections": 8
+    },
+    {
+      "name": "Marcel Proust",
+      "articles": 2,
+      "connections": 9
+    }
+  ],
+  "timelineData": [
+    {
+      "month": "2024-07",
+      "count": 9
+    },
+    {
+      "month": "2024-08",
+      "count": 8
+    },
+    {
+      "month": "2024-09",
+      "count": 6
+    },
+    {
+      "month": "2024-10",
+      "count": 8
+    },
+    {
+      "month": "2024-11",
+      "count": 6
+    },
+    {
+      "month": "2024-12",
+      "count": 8
+    },
+    {
+      "month": "2025-01",
+      "count": 10
+    },
+    {
+      "month": "2025-02",
+      "count": 13
+    },
+    {
+      "month": "2025-03",
+      "count": 13
+    },
+    {
+      "month": "2025-04",
+      "count": 11
+    },
+    {
+      "month": "2025-05",
+      "count": 8
+    }
+  ]
+}
