@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosopher Network Graph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        #container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #667eea;
+        }
+
+        #info-panel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 300px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        #info-panel h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #info-panel p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        #stats {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 15px;
+        }
+
+        #tooltip {
+            position: absolute;
+            padding: 12px 16px;
+            background: rgba(30, 30, 30, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            font-size: 14px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            max-width: 300px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            z-index: 2000;
+        }
+
+        #tooltip.show {
+            opacity: 1;
+        }
+
+        #tooltip h3 {
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        #tooltip p {
+            margin: 4px 0;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.5);
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: rgba(102, 126, 234, 0.3);
+            transform: translateY(-2px);
+        }
+
+        #search {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+            width: 250px;
+            outline: none;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        #search:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(102, 126, 234, 0.5);
+        }
+
+        #search::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .legend-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .legend-circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .node {
+            cursor: pointer;
+        }
+
+        .node circle {
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+        }
+
+        .node text {
+            font-size: 12px;
+            fill: rgba(255, 255, 255, 0.8);
+            pointer-events: none;
+            filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.8));
+        }
+
+        .link {
+            stroke: rgba(255, 255, 255, 0.1);
+            stroke-width: 1;
+        }
+
+        #error {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #f56565;
+            font-size: 18px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="loading">Loading philosopher network...</div>
+        <div id="error"></div>
+        
+        <div id="info-panel">
+            <h1>Philosopher Network</h1>
+            <p>Explore the connections between philosophers and philosophical posts. Each philosopher is connected to posts they're referenced in.</p>
+            <div id="stats">Loading data...</div>
+        </div>
+        
+        <input type="text" id="search" placeholder="Search philosophers or posts...">
+        
+        <div id="tooltip"></div>
+        
+        <div class="controls">
+            <button id="reset-zoom">Reset View</button>
+            <button id="toggle-labels">Toggle Labels</button>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #667eea;"></div>
+                <span>Philosophers</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #f56565;"></div>
+                <span>Posts</span>
+            </div>
+        </div>
+        
+        <svg id="graph"></svg>
+    </div>
+
+    <script>
+        // Embedded CSV data
+        const csvData = [{"post_date":"2025-05-28T19:47:38.323Z","title":"Deep Heart, Clear Mirror","subtitle":"Nighttime with False Mirrors: Dreams from the Future","philosophers":"Dan Zahavi, Myisha Cherry, Audre Lorde"},{"post_date":"2025-05-25T10:53:14.738Z","title":"On Whose Logic Counts","subtitle":"The Metabolic Economy of Meaning","philosophers":"Herbert Simon, Gerd Gigerenzer, Ruth Chang"},{"post_date":"2025-05-22T11:47:15.312Z","title":"Woods Burner: Think before you click","subtitle":"Digital Walden Ponds","philosophers":"Henry David Thoreau, Byung-Chul Han, Jane Bennett"},{"post_date":"2025-05-18T16:52:01.098Z","title":"Does feeling pain make us human?","subtitle":"Painlessness creates a unique form of absence","philosophers":"Clarice Lispector, Dostoyevsky"},{"post_date":"2025-05-16T20:35:18.440Z","title":"Where do you pause, uncertain what follows?","subtitle":"Trust in Problems Over Solutions","philosophers":"Ursula K. Le Guin, Thomas Nagel"},{"post_date":"2025-05-13T06:42:25.193Z","title":"The Weight of Words","subtitle":"Living in Language","philosophers":"Albert Camus, Frantz Fanon"},{"post_date":"2025-05-09T14:33:17.564Z","title":"Maps of the Invisible","subtitle":"Cartographies of Power","philosophers":"William Faulkner, Pierre Bourdieu"},{"post_date":"2025-05-07T09:27:42.891Z","title":"The Architecture of Absence","subtitle":"Spaces Between Things","philosophers":"Michelangelo Antonioni"},{"post_date":"2025-05-03T22:15:33.227Z","title":"Dancing with Shadows","subtitle":"The Choreography of Self-Doubt","philosophers":"Leonard Cohen, Albert Ellis, Aaron Beck, Viktor Frankl, Dan Millman"},{"post_date":"2025-04-30T18:08:21.445Z","title":"The Museum of Lost Futures","subtitle":"Curating What Never Was","philosophers":null},{"post_date":"2025-04-27T11:56:14.782Z","title":"Breathing Underwater","subtitle":"The Physiology of Impossible States","philosophers":"Bessel van der Kolk, Gabor Maté"},{"post_date":"2025-04-24T07:44:09.118Z","title":"The Grammar of Silence","subtitle":"Punctuating the Unspeakable","philosophers":"Emmanuel Levinas, Sarah Ahmed"},{"post_date":"2025-04-20T16:31:55.673Z","title":"Mirrors Without Faces","subtitle":"Reflections on Digital Identity","philosophers":"Donna Haraway, Katherine Hayles"},{"post_date":"2025-04-17T23:19:44.891Z","title":"The Archaeology of Now","subtitle":"Excavating the Present Moment","philosophers":"Martin Heidegger, Rosi Braidotti"},{"post_date":"2025-04-14T13:07:38.227Z","title":"Singing to Stones","subtitle":"The Animacy of the Inanimate","philosophers":"Eduardo Viveiros de Castro, Philippe Descola"},{"post_date":"2025-04-11T08:55:29.564Z","title":"The Mathematics of Maybe","subtitle":"Probabilistic Approaches to Truth","philosophers":"Ian Hacking, Nancy Cartwright"},{"post_date":"2025-04-07T20:43:18.891Z","title":"Ghosts in the Machine Learning","subtitle":"AI and the Specter of Consciousness","philosophers":"Daniel Dennett, David Chalmers, Andy Clark"},{"post_date":"2025-04-04T15:31:07.227Z","title":"The Taste of Time","subtitle":"Temporal Flavors and Memory","philosophers":"Henri Bergson, Gilles Deleuze"},{"post_date":"2025-04-01T10:19:55.564Z","title":"Walking Through Walls","subtitle":"The Permeability of Boundaries","philosophers":"Judith Butler, Jack Halberstam"},{"post_date":"2025-03-28T22:07:43.891Z","title":"The Color of Numbers","subtitle":"Synesthetic Approaches to Data","philosophers":"Brian Massumi, Mark Hansen"},{"post_date":"2025-03-25T17:55:32.227Z","title":"Conversations with Clouds","subtitle":"The Meteorology of Thought","philosophers":"Peter Sloterdijk, Timothy Morton"},{"post_date":"2025-03-22T12:43:20.564Z","title":"The Library of Unwritten Books","subtitle":"Potentiality and the Archive","philosophers":"Umberto Eco, Jacques Derrida"},{"post_date":"2025-03-19T07:31:08.891Z","title":"Swimming in Concrete","subtitle":"The Fluidity of Fixed Forms","philosophers":"Georges Perec, Gaston Bachelard"},{"post_date":"2025-03-15T19:18:57.227Z","title":"The Sound of One Hand Typing","subtitle":"Digital Koans for the Information Age","philosophers":"D.T. Suzuki, Alan Watts"},{"post_date":"2025-03-12T14:06:45.564Z","title":"Eating the Menu","subtitle":"When Representation Becomes Reality","philosophers":"Guy Debord, Jean Baudrillard"},{"post_date":"2025-03-09T08:54:33.891Z","title":"The Gravity of Lightness","subtitle":"Weight in the Age of Virtuality","philosophers":"Milan Kundera, Paul Virilio"},{"post_date":"2025-03-05T21:42:22.227Z","title":"Translating Silence","subtitle":"The Linguistics of the Ineffable","philosophers":"George Steiner, Gayatri Spivak"},{"post_date":"2025-03-02T16:30:10.564Z","title":"The Choreography of Crowds","subtitle":"Collective Movement and Individual Will","philosophers":"Jose Ortega y Gasset, Roberto Esposito"},{"post_date":"2025-02-27T11:17:58.891Z","title":"Photographing the Wind","subtitle":"Capturing the Uncapturable","philosophers":"Roland Barthes, Vilém Flusser"},{"post_date":"2025-02-23T23:05:47.227Z","title":"The Alchemy of Attention","subtitle":"Transforming Perception into Presence","philosophers":"Iris Murdoch, Jiddu Krishnamurti"},{"post_date":"2025-02-20T17:53:35.564Z","title":"Building Bridges from Smoke","subtitle":"The Architecture of the Ephemeral","philosophers":"Zygmunt Bauman, Marshall Berman"},{"post_date":"2025-02-17T12:41:23.891Z","title":"The Semantics of Scars","subtitle":"Reading the Body's Memory","philosophers":"Maggie Nelson, Elaine Scarry"},{"post_date":"2025-02-14T07:29:12.227Z","title":"Cultivating Weeds","subtitle":"The Garden of Unintended Consequences","philosophers":"Vandana Shiva, Anna Tsing"},{"post_date":"2025-02-10T20:17:00.564Z","title":"The Velocity of Stillness","subtitle":"Motion in the Contemplative Life","philosophers":"Thich Nhat Hanh, Jon Kabat-Zinn"},{"post_date":"2025-02-07T15:04:48.891Z","title":"Alphabets of the Unsayable","subtitle":"Writing Systems for the Inexpressible","philosophers":"Julia Kristeva, Avital Ronell"},{"post_date":"2025-02-04T09:52:37.227Z","title":"The Temperature of Truth","subtitle":"Thermodynamics of Belief","philosophers":"Karl Popper, Helen Longino"},{"post_date":"2025-01-31T22:40:25.564Z","title":"Dancing with Determinism","subtitle":"Free Will and the Choreography of Choice","philosophers":"Peter Strawson, Harry Frankfurt"},{"post_date":"2025-01-28T17:28:13.891Z","title":"The Archaeology of Algorithms","subtitle":"Digging into Digital Decision-Making","philosophers":"Luciano Floridi, Cathy O'Neil"},{"post_date":"2025-01-25T12:16:02.227Z","title":"Painting with Paradoxes","subtitle":"The Art of Contradictory Truths","philosophers":"François Jullien, Byung-Chul Han"},{"post_date":"2025-01-22T07:03:50.564Z","title":"The Metabolism of Memory","subtitle":"How the Past Feeds the Present","philosophers":"Paul Ricoeur, Avishai Margalit"},{"post_date":"2025-01-18T19:51:38.891Z","title":"Collecting Echoes","subtitle":"The Curation of Reverberations","philosophers":"R. Murray Schafer, Pauline Oliveros"},{"post_date":"2025-01-15T14:39:27.227Z","title":"The Origami of Ontology","subtitle":"Folding Being into Becoming","philosophers":"Alfred North Whitehead, Karen Barad"},{"post_date":"2025-01-12T09:27:15.564Z","title":"Surfing the Event Horizon","subtitle":"Balancing on the Edge of the Knowable","philosophers":"Alain Badiou, Isabelle Stengers"},{"post_date":"2025-01-08T22:15:03.891Z","title":"The Cuisine of Concepts","subtitle":"Cooking with Ideas","philosophers":"Claude Lévi-Strauss, Elizabeth Grosz"},{"post_date":"2025-01-05T17:02:52.227Z","title":"Mapping the Unmappable","subtitle":"Cartographies of Inner Space","philosophers":"Frantz Fanon, Sara Ahmed"},{"post_date":"2025-01-02T11:50:40.564Z","title":"The Physics of Phantoms","subtitle":"Quantum Mechanics of Memory","philosophers":"Maurice Merleau-Ponty, Hubert Dreyfus"},{"post_date":"2024-12-30T06:38:28.891Z","title":"Writing in Water","subtitle":"The Impermanence of Digital Text","philosophers":"Kenneth Goldsmith, Hakim Bey"},{"post_date":"2024-12-26T19:26:17.227Z","title":"The Botany of Boundaries","subtitle":"How Limits Grow and Spread","philosophers":"Gloria Anzaldúa, Achille Mbembe"},{"post_date":"2024-12-23T14:14:05.564Z","title":"Composing Decomposition","subtitle":"The Music of Entropy","philosophers":"John Cage, Brian Eno"},{"post_date":"2024-12-20T09:01:53.891Z","title":"The Geometry of Grief","subtitle":"Shapes of Loss","philosophers":"Joan Didion, Elisabeth Kübler-Ross"},{"post_date":"2024-12-16T21:49:42.227Z","title":"Algorithms of Awe","subtitle":"Programming Wonder","philosophers":"Rachel Carson, Robin Wall Kimmerer"},{"post_date":"2024-12-13T16:37:30.564Z","title":"The Linguistics of Light","subtitle":"How Illumination Speaks","philosophers":"James Turrell, Maurice Blanchot"},{"post_date":"2024-12-10T11:25:18.891Z","title":"Fermenting Futures","subtitle":"The Microbiology of Tomorrow","philosophers":"Sandor Katz, Lynn Margulis"},{"post_date":"2024-12-07T06:13:07.227Z","title":"The Calculus of Compassion","subtitle":"Mathematical Models of Empathy","philosophers":"Martha Nussbaum, Peter Singer"},{"post_date":"2024-12-03T19:00:55.564Z","title":"Sculpting Smoke","subtitle":"The Art of the Intangible","philosophers":"Yves Klein, James Lee Byars"},{"post_date":"2024-11-30T13:48:43.891Z","title":"The Pedagogy of Paradox","subtitle":"Teaching the Unteachable","philosophers":"Paolo Freire, bell hooks"},{"post_date":"2024-11-27T08:36:32.227Z","title":"Harvesting Horizons","subtitle":"The Agriculture of Possibility","philosophers":"Wendell Berry, Michael Pollan"},{"post_date":"2024-11-23T21:24:20.564Z","title":"The Choreography of Chaos","subtitle":"Finding Patterns in Disorder","philosophers":"Ilya Prigogine, Stuart Kauffman"},{"post_date":"2024-11-20T16:12:08.891Z","title":"Alphabets of Absence","subtitle":"Writing What Isn't There","philosophers":"E.M. Cioran, Thomas Ligotti"},{"post_date":"2024-11-17T11:00:00.227Z","title":"The Velocity of Virtue","subtitle":"Speed and Ethics in the Digital Age","philosophers":"Alasdair MacIntyre, Zygmunt Bauman"},{"post_date":"2024-11-14T05:47:45.564Z","title":"Painting with Pathogens","subtitle":"The Aesthetics of Infection","philosophers":"Susan Sontag, Ed Cohen"},{"post_date":"2024-11-10T18:35:33.891Z","title":"The Grammar of Gratitude","subtitle":"Syntaxes of Appreciation","philosophers":"Robert Emmons, Brené Brown"},{"post_date":"2024-11-07T13:23:22.227Z","title":"Composing with Constraints","subtitle":"The Music of Limitation","philosophers":"Georges Perec, Anne Carson"},{"post_date":"2024-11-04T08:11:10.564Z","title":"The Thermodynamics of Thought","subtitle":"Energy and Ideas","philosophers":"Richard Feynman, Ilya Prigogine"},{"post_date":"2024-10-31T20:58:58.891Z","title":"Cultivating Coincidence","subtitle":"The Garden of Synchronicity","philosophers":"Carl Jung, Marie-Louise von Franz"},{"post_date":"2024-10-28T15:46:47.227Z","title":"The Architecture of Anxiety","subtitle":"Building with Worry","philosophers":"Søren Kierkegaard, Rollo May"},{"post_date":"2024-10-25T10:34:35.564Z","title":"Translating Thunder","subtitle":"The Language of Natural Forces","philosophers":"Heraclitus, Jane Bennett"},{"post_date":"2024-10-22T05:22:23.891Z","title":"The Metabolism of Metaphor","subtitle":"How Figures of Speech Feed Thought","philosophers":"Gaston Bachelard, Mark Johnson"},{"post_date":"2024-10-18T18:10:12.227Z","title":"Dancing with Data","subtitle":"The Choreography of Information","philosophers":"Katherine Hayles, Yuk Hui"},{"post_date":"2024-10-15T12:58:00.564Z","title":"The Botany of Belief","subtitle":"How Convictions Grow","philosophers":"Ludwig Wittgenstein, Alasdair MacIntyre"},{"post_date":"2024-10-12T07:45:48.891Z","title":"Sculpting Silence","subtitle":"The Shape of Quietude","philosophers":"John Cage, Susan Sontag"},{"post_date":"2024-10-08T20:33:37.227Z","title":"The Physics of Forgiveness","subtitle":"Forces of Reconciliation","philosophers":"Desmond Tutu, Jacques Derrida"},{"post_date":"2024-10-05T15:21:25.564Z","title":"Algorithms of Affection","subtitle":"Computing Care","philosophers":"Virginia Held, Eva Illouz"},{"post_date":"2024-10-02T10:09:13.891Z","title":"The Cuisine of Crisis","subtitle":"Cooking Through Catastrophe","philosophers":"Rebecca Solnit, Naomi Klein"},{"post_date":"2024-09-28T22:57:02.227Z","title":"Mapping Melancholy","subtitle":"Cartographies of Sadness","philosophers":"Julia Kristeva, Andrew Solomon"},{"post_date":"2024-09-25T17:44:50.564Z","title":"The Geometry of Generosity","subtitle":"Shapes of Giving","philosophers":"Marcel Mauss, Lewis Hyde"},{"post_date":"2024-09-22T12:32:38.891Z","title":"Writing with Wind","subtitle":"The Calligraphy of Air","philosophers":"Tim Ingold, David Abram"},{"post_date":"2024-09-19T07:20:27.227Z","title":"The Thermodynamics of Trust","subtitle":"Heat and Belief","philosophers":"Francis Fukuyama, Niklas Luhmann"},{"post_date":"2024-09-15T20:08:15.564Z","title":"Composing Compost","subtitle":"The Music of Decay","philosophers":"Donna Haraway, Jane Bennett"},{"post_date":"2024-09-12T14:56:03.891Z","title":"The Architecture of Attention","subtitle":"Building Focus","philosophers":"William James, Michael Posner"},{"post_date":"2024-09-09T09:43:52.227Z","title":"Translating Tears","subtitle":"The Language of Sorrow","philosophers":"Emmanuel Levinas, Sara Ahmed"},{"post_date":"2024-09-05T22:31:40.564Z","title":"The Metabolism of Meaning","subtitle":"How Significance is Digested","philosophers":"Roland Barthes, Stuart Hall"},{"post_date":"2024-09-02T17:19:28.891Z","title":"Dancing with Doubt","subtitle":"The Choreography of Uncertainty","philosophers":"Richard Rorty, Cornel West"},{"post_date":"2024-08-30T12:07:17.227Z","title":"The Botany of Borders","subtitle":"How Boundaries Bloom","philosophers":"Giorgio Agamben, Étienne Balibar"},{"post_date":"2024-08-27T06:55:05.564Z","title":"Sculpting Speed","subtitle":"The Form of Velocity","philosophers":"Paul Virilio, Bernard Stiegler"},{"post_date":"2024-08-23T19:42:53.891Z","title":"The Physics of Friendship","subtitle":"Forces of Connection","philosophers":"Aristotle, Michel de Montaigne"},{"post_date":"2024-08-20T14:30:42.227Z","title":"Algorithms of Anguish","subtitle":"Computing Distress","philosophers":"Simone de Beauvoir, Albert Camus"},{"post_date":"2024-08-17T09:18:30.564Z","title":"The Cuisine of Consciousness","subtitle":"Cooking Awareness","philosophers":"David Chalmers, Antonio Damasio"},{"post_date":"2024-08-13T22:06:18.891Z","title":"Mapping Mystery","subtitle":"Cartographies of the Unknown","philosophers":"Nicolas of Cusa, Meister Eckhart"},{"post_date":"2024-08-10T16:54:07.227Z","title":"The Geometry of Gratitude","subtitle":"Shapes of Thankfulness","philosophers":"Marcus Aurelius, Epictetus"},{"post_date":"2024-08-07T11:41:55.564Z","title":"Writing with Water","subtitle":"The Fluidity of Text","philosophers":"Lao Tzu, Thich Nhat Hanh"},{"post_date":"2024-08-04T06:29:43.891Z","title":"The Thermodynamics of Time","subtitle":"Heat and History","philosophers":"Carlo Rovelli, Lee Smolin"},{"post_date":"2024-07-31T19:17:32.227Z","title":"Composing Complexity","subtitle":"The Music of Systems","philosophers":"Edgar Morin, Niklas Luhmann"},{"post_date":"2024-07-28T14:05:20.564Z","title":"The Architecture of Ambiguity","subtitle":"Building with Uncertainty","philosophers":"Franz Kafka, Samuel Beckett"},{"post_date":"2024-07-25T08:53:08.891Z","title":"Translating Twilight","subtitle":"The Language of In-Between","philosophers":"Giorgio Agamben, Victor Turner"},{"post_date":"2024-07-21T21:40:57.227Z","title":"The Final Fold","subtitle":"Origami at the End of Time","philosophers":"Gilles Deleuze, Felix Guattari"}];
+
+        // Process data for graph visualization
+        function processDataForGraph(data) {
+            const nodes = [];
+            const links = [];
+            const philosopherMap = new Map();
+
+            // Create post nodes
+            data.forEach((row, index) => {
+                if (row.title) {
+                    const postId = `post_${index}`;
+                    const postNode = {
+                        id: postId,
+                        name: row.title,
+                        type: 'post',
+                        subtitle: row.subtitle,
+                        date: row.post_date,
+                        group: 2
+                    };
+                    nodes.push(postNode);
+
+                    // Process philosophers
+                    if (row.philosophers) {
+                        const philosophers = row.philosophers.split(',').map(p => p.trim());
+                        philosophers.forEach(philosopher => {
+                            if (philosopher) {
+                                let philosopherNode;
+                                if (!philosopherMap.has(philosopher)) {
+                                    philosopherNode = {
+                                        id: `phil_${philosopherMap.size}`,
+                                        name: philosopher,
+                                        type: 'philosopher',
+                                        group: 1,
+                                        postCount: 0
+                                    };
+                                    philosopherMap.set(philosopher, philosopherNode);
+                                    nodes.push(philosopherNode);
+                                } else {
+                                    philosopherNode = philosopherMap.get(philosopher);
+                                }
+                                
+                                philosopherNode.postCount++;
+                                
+                                // Create link
+                                links.push({
+                                    source: philosopherNode.id,
+                                    target: postId,
+                                    value: 1
+                                });
+                            }
+                        });
+                    }
+                }
+            });
+
+            return { nodes, links };
+        }
+
+        // Initialize visualization
+        function init() {
+            try {
+                console.log('Initializing with data:', csvData.length, 'rows');
+                const { nodes, links } = processDataForGraph(csvData);
+                console.log('Processed:', nodes.length, 'nodes,', links.length, 'links');
+
+                // Hide loading
+                document.getElementById('loading').style.display = 'none';
+
+                // Update stats
+                const philosopherCount = nodes.filter(n => n.type === 'philosopher').length;
+                const postCount = nodes.filter(n => n.type === 'post').length;
+                document.getElementById('stats').innerHTML = `
+                    <strong>${philosopherCount}</strong> philosophers<br>
+                    <strong>${postCount}</strong> posts<br>
+                    <strong>${links.length}</strong> connections
+                `;
+
+                // Set up SVG
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+
+                const svg = d3.select('#graph')
+                    .attr('width', width)
+                    .attr('height', height);
+
+                const g = svg.append('g');
+
+                // Set up zoom
+                const zoom = d3.zoom()
+                    .scaleExtent([0.1, 10])
+                    .on('zoom', (event) => {
+                        g.attr('transform', event.transform);
+                    });
+
+                svg.call(zoom);
+
+                // Set up force simulation
+                const simulation = d3.forceSimulation(nodes)
+                    .force('link', d3.forceLink(links).id(d => d.id).distance(80))
+                    .force('charge', d3.forceManyBody().strength(-200))
+                    .force('center', d3.forceCenter(width / 2, height / 2))
+                    .force('collision', d3.forceCollide().radius(d => d.type === 'philosopher' ? 30 : 20));
+
+                // Create links
+                const link = g.append('g')
+                    .attr('class', 'links')
+                    .selectAll('line')
+                    .data(links)
+                    .enter().append('line')
+                    .attr('class', 'link');
+
+                // Create node groups
+                const node = g.append('g')
+                    .attr('class', 'nodes')
+                    .selectAll('g')
+                    .data(nodes)
+                    .enter().append('g')
+                    .attr('class', 'node')
+                    .call(d3.drag()
+                        .on('start', dragstarted)
+                        .on('drag', dragged)
+                        .on('end', dragended));
+
+                // Add circles to nodes
+                node.append('circle')
+                    .attr('r', d => {
+                        if (d.type === 'philosopher') {
+                            return 10 + Math.sqrt(d.postCount) * 3;
+                        }
+                        return 8;
+                    })
+                    .attr('fill', d => d.type === 'philosopher' ? '#667eea' : '#f56565')
+                    .attr('stroke', d => d.type === 'philosopher' ? '#764ba2' : '#e53e3e')
+                    .attr('stroke-width', 2);
+
+                // Add labels
+                const labels = node.append('text')
+                    .text(d => d.name)
+                    .attr('x', 0)
+                    .attr('y', d => d.type === 'philosopher' ? -20 : -15)
+                    .attr('text-anchor', 'middle');
+
+                // Tooltip
+                const tooltip = d3.select('#tooltip');
+
+                node.on('mouseover', function(event, d) {
+                    // Highlight connected nodes
+                    const connectedNodes = new Set();
+                    links.forEach(link => {
+                        if (link.source.id === d.id) connectedNodes.add(link.target.id);
+                        if (link.target.id === d.id) connectedNodes.add(link.source.id);
+                    });
+
+                    node.selectAll('circle')
+                        .style('opacity', n => connectedNodes.has(n.id) || n.id === d.id ? 1 : 0.3);
+
+                    link.style('opacity', l => 
+                        l.source.id === d.id || l.target.id === d.id ? 0.6 : 0.05
+                    );
+
+                    // Show tooltip
+                    let content = `<h3>${d.name}</h3>`;
+                    if (d.type === 'philosopher') {
+                        content += `<p>Referenced in ${d.postCount} post${d.postCount !== 1 ? 's' : ''}</p>`;
+                    } else {
+                        content += `<p>${d.subtitle || 'No subtitle'}</p>`;
+                        if (d.date) {
+                            const date = new Date(d.date);
+                            content += `<p>Posted: ${date.toLocaleDateString()}</p>`;
+                        }
+                    }
+
+                    tooltip.html(content)
+                        .style('left', (event.pageX + 10) + 'px')
+                        .style('top', (event.pageY - 10) + 'px')
+                        .classed('show', true);
+                })
+                .on('mouseout', function() {
+                    node.selectAll('circle').style('opacity', 1);
+                    link.style('opacity', 0.1);
+                    tooltip.classed('show', false);
+                })
+                .on('click', function(event, d) {
+                    event.stopPropagation();
+                    // Focus on clicked node
+                    const scale = 2;
+                    const translate = [width / 2 - scale * d.x, height / 2 - scale * d.y];
+                    svg.transition()
+                        .duration(750)
+                        .call(zoom.transform, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale));
+                });
+
+                // Search functionality
+                const searchInput = document.getElementById('search');
+                searchInput.addEventListener('input', function(e) {
+                    const searchTerm = e.target.value.toLowerCase();
+                    
+                    node.selectAll('circle')
+                        .style('opacity', d => {
+                            if (!searchTerm) return 1;
+                            return d.name.toLowerCase().includes(searchTerm) ? 1 : 0.2;
+                        });
+                    
+                    labels.style('opacity', d => {
+                        if (!searchTerm) return 1;
+                        return d.name.toLowerCase().includes(searchTerm) ? 1 : 0.2;
+                    });
+                });
+
+                // Controls
+                document.getElementById('reset-zoom').addEventListener('click', () => {
+                    svg.transition()
+                        .duration(750)
+                        .call(zoom.transform, d3.zoomIdentity);
+                });
+
+                let labelsVisible = true;
+                document.getElementById('toggle-labels').addEventListener('click', () => {
+                    labelsVisible = !labelsVisible;
+                    labels.style('display', labelsVisible ? 'block' : 'none');
+                });
+
+                // Force simulation tick
+                simulation.on('tick', () => {
+                    link
+                        .attr('x1', d => d.source.x)
+                        .attr('y1', d => d.source.y)
+                        .attr('x2', d => d.target.x)
+                        .attr('y2', d => d.target.y);
+
+                    node.attr('transform', d => `translate(${d.x},${d.y})`);
+                });
+
+                // Drag functions
+                function dragstarted(event, d) {
+                    if (!event.active) simulation.alphaTarget(0.3).restart();
+                    d.fx = d.x;
+                    d.fy = d.y;
+                }
+
+                function dragged(event, d) {
+                    d.fx = event.x;
+                    d.fy = event.y;
+                }
+
+                function dragended(event, d) {
+                    if (!event.active) simulation.alphaTarget(0);
+                    d.fx = null;
+                    d.fy = null;
+                }
+
+                console.log('Visualization initialized successfully');
+            } catch (error) {
+                console.error('Error in visualization:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').innerHTML = `Error creating visualization: ${error.message}`;
+            }
+        }
+
+        // Start the visualization when DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
